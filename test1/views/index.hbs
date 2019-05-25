@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-3">
+            <a href="#" class="nav-tabs-dropdown btn btn-block btn-primary">Player's Name</a>
+            <ul id="nav-tabs-wrapper" class="nav nav-tabs nav-pills nav-stacked well">
+                {{#each Player}}
+                    <li><a href="/person/{{@index}}" data-toggle="tab">{{this.name}}</a></li>
+                {{/each}}
+                </ul>
+        </div>
+        <div class="col-sm-6">
+            <h2 style="padding: 20px">Player Details</h2>
+            <ul>
+                {{#each Person}}
+                    <li>{{this}}</li>
+                {{/each}}
+            </ul>
+        </div>
+
+    </div>
+</div>
